@@ -1,4 +1,4 @@
-import  React from 'react';
+import  React, { Component } from 'react';
 
 class Post extends Component {
     constructor() {
@@ -18,9 +18,12 @@ class Post extends Component {
     // }
 
     render() {
-        <div>
-            Post
-        </div>
+        return (
+            <div>
+                Post
+            </div>
+        );        
+
     }
 }
 

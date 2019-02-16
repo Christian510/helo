@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import routes from './routes';
+import route from './route';
 import { Link } from 'react-router-dom';
 
 
@@ -13,7 +13,7 @@ class App extends Component {
         <Link to="/dashboard" >Dash</Link>
         <Link to="/postid" >Post</Link>
         <Link to="/new" >Form</Link>
-        { routes }
+        { route }
       </div>
     );
   }

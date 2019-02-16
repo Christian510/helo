@@ -1,4 +1,4 @@
-import  React from 'react';
+import  React, { Component } from 'react';
 
 class Dash extends Component {
     constructor(  ) {
@@ -21,9 +21,11 @@ class Dash extends Component {
     // }
 
     render() {
-        <div>
-            Dashboard
-        </div>
+        return ( 
+            <div>
+                Dashboard
+            </div>
+         );
     }
 }
 
