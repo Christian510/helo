@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Auth from './components/Auth';
-import Nav from './components/Nav';
-import Dash from './components/Dash';
-import Form from './components/Form';
-import Post from './components/Post';
+import routes from './routes';
+import { Link } from 'react-router-dom';
 
 
 class App extends Component {
@@ -12,12 +9,11 @@ class App extends Component {
     return (
       <div className="App">
 
-        <Nav />
-        <Auth />
-        <Dash />
-        <Form />
-        <Post />
-
+        <Link to="/" ></Link>
+        <Link to="/dashboard" >Dash</Link>
+        <Link to="/postid" >Post</Link>
+        <Link to="/new" >Form</Link>
+        { routes }
       </div>
     );
   }
