@@ -10,9 +10,9 @@ class App extends Component {
       <div className="App">
 
         <Link to="/" ></Link>
-        <Link to="/dashboard" >Dash</Link>
-        <Link to="/postid" >Post</Link>
-        <Link to="/new" >Form</Link>
+        <Link to="/dashboard" ></Link>
+        <Link to="/postid" ></Link>
+        <Link to="/new" ></Link>
         { route }
       </div>
     );

@@ -33,32 +33,36 @@ class Auth extends Component {
 
     render() {
         return (
-            <div className="container">
-                <div className="wrapper">
+            <div className="App">
+                <div className="position">
                     <div className="login">
-                        <div>
-                            <img src={ HeloLogo } alt="Helo-Logo"></img>
-                        </div>
-                        <div>
-                            <p>Helo</p>
-                        </div>
-                        <div>
-                            <label> Username
+                        <div className="center-content">
+                            <div>
+                                <img src={ HeloLogo } alt="Helo-Logo"></img>
+                            </div>
+                            <div>
+                                <h1 id="title-font">Helo</h1>
+                            </div>
+                            {/* <div> */}
+                            <div className="input-field">
+                                <label>Username</label>
                                 <input 
                                 type={ "text" } 
                                 value={ this.state.username }
                                 onChange={(e) => { this.handleChange( e.target.value) } } />
-                            </label>
-                            <label> Password
+                            </div>  
+                            <div className="input-field">
+                                <label>Password</label>
                                 <input type={"text"} value={ this.state.password } onChange={ (e) => { this.handlePassword( e.target.value ) } } />
-                            </label>
-                        </div>
-                        <div>
-                            <button onClick={ this.handleLogin } >Login</button>
-                            <button>Register</button>
+                            </div>   
+                            {/* </div> */}
+                            <div className="button">
+                                <button id="login-bt" onClick={ this.handleLogin }>Login</button>
+                                <button id="register-bt" >Register</button>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </div>    
             </div>
         );
     }

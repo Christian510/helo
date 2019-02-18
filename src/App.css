@@ -8,41 +8,87 @@
   background-color: #FF9770;
 }
 
-
-/* *** Auth.js View *** */
-.container{
-  margin: 0 auto;
-  width: 500px;
-  height: 500px;
-
-}
-.wrapper {
+.position {
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
 
+
+/* *** Auth.js View *** */
+.center-content {
+  padding-top: 100px;
+}
+
+#title-font {
+  font-size: 4em;
+  margin: 0;
 }
 
 .login {
-  padding-top: 10vh;
-  display: inline-block;
-  margin: 0 auto;
   background-color: red;
   width: 500px;
   height: 500px;
-  
+}
+label {
+  padding-right: 20px;
+}
+.input-field {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.button {
+  width: 100%;
+  padding-right: 10px;
+}
+#login-bt{
+  float: left;
+  padding-left: 10px;
+  padding-right: 20px;
+  margin-right: 10px;
+  margin-left: 30%;
+}
+#register-bt {
+  float: right;
+  margin-right: 30%;
 }
 
 /* *** End Auth.js Vew *** */
 
-/* div.container4 {
-    height: 10em;
-    position: relative }
-div.container4 p {
-    margin: 0;
-    background: yellow;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%) 
-  } */
+/*  *** Dash.js ***  */
+#dash-container {
+  width: 100px;
+  height: 800px;
+  background-color: #ffd670;
+  margin: 0;
+}
+.justify-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#navigation {
+  height: 300px;
+}
+
+.nav-link {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+#user {
+  width: 60px;
+  height: 60px;
+}
+
+#shut-down {
+  padding-bottom: 25px;
+}
+
+
+/*  *** End Dash.js *** */
