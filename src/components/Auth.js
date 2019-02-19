@@ -34,16 +34,14 @@ class Auth extends Component {
     render() {
         return (
             <div className="App">
-                <div className="position">
+                <div className="flex-center">
                     <div className="login">
-                        <div className="center-content">
                             <div>
                                 <img src={ HeloLogo } alt="Helo-Logo"></img>
                             </div>
                             <div>
                                 <h1 id="title-font">Helo</h1>
                             </div>
-                            {/* <div> */}
                             <div className="input-field">
                                 <label>Username</label>
                                 <input 
@@ -55,12 +53,10 @@ class Auth extends Component {
                                 <label>Password</label>
                                 <input type={"text"} value={ this.state.password } onChange={ (e) => { this.handlePassword( e.target.value ) } } />
                             </div>   
-                            {/* </div> */}
                             <div className="button">
                                 <button id="login-bt" onClick={ this.handleLogin }>Login</button>
                                 <button id="register-bt" >Register</button>
                             </div>
-                        </div>
                     </div>
                 </div>    
             </div>

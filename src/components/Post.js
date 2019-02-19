@@ -1,4 +1,5 @@
 import  React, { Component } from 'react';
+import Dash from '../components/Dash';
 
 class Post extends Component {
     constructor() {
@@ -20,7 +21,8 @@ class Post extends Component {
     render() {
         return (
             <div>
-                Post
+                Nav
+                <Dash />
             </div>
         );        
 
